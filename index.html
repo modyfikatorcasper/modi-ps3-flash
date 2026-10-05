@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <title>MODI PS3 Flash - logowanie</title>
+  <title>PS3 Future Flash</title>
   <style type="text/css">
     body { margin: 0; background: #101722; color: #fff; font: 20px Arial, sans-serif; }
     #login { width: 82%; max-width: 480px; margin: 60px auto; padding: 24px; background: #1d2939; border: 1px solid #526277; }
@@ -31,7 +31,7 @@
         field.value = '';
         window.location.replace('writer/');
       } else {
-        document.getElementById('error').innerHTML = 'Nieprawidłowe hasło. Spróbuj ponownie.';
+        document.getElementById('error').innerHTML = 'Invalid access code.';
         field.value = '';
         field.focus();
       }
@@ -41,16 +41,16 @@
 </head>
 <body>
   <div id="login">
-    <h1>MODI PS3 Flash</h1>
-    <p>Dostęp serwisowy · Flash Writer 4.93</p>
+    <h1>PS3 Future Flash</h1>
+    <p>Online NOR/NAND Backup &amp; Patch Utility · Firmware 4.93</p>
     <form action="#" method="get" onsubmit="return login();">
-      <label for="password">Hasło</label>
+      <label for="password">Access code</label>
       <input id="password" type="password" maxlength="6" size="6" autocomplete="off">
       <br>
-      <button type="submit">Zaloguj</button>
+      <button type="submit">Enter</button>
       <p id="error" role="alert" aria-live="polite"></p>
     </form>
-    <noscript><p>Włącz JavaScript w przeglądarce, aby się zalogować.</p></noscript>
+    <noscript><p>JavaScript is required.</p></noscript>
   </div>
 </body>
 </html>
