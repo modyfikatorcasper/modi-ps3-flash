@@ -1,17 +1,25 @@
-# MODI PS3 Flash
+# PS3 Future Flash
 
-GitHub Pages service copy of [xXEvilnatXx/flash-writer](https://github.com/xXEvilnatXx/flash-writer), pinned to commit `a167c406d059e168bbdb70a067a5fe35b84bcb19` (Flash Writer 4.93, unofficial).
+**Online NOR/NAND Backup & Patch Utility for PS3**
 
-Site: https://modyfikatorcasper.github.io/modi-ps3-flash/
+Fast browser-based service tool for PS3 firmware 4.93.
 
-The original `index.html` and `flash493.P3T` are copied byte-for-byte into `writer/`. Original authors and credits remain intact. The root index adds only a separate access-code screen, using old-browser JavaScript and ordinary form controls for the PS3 browser.
+Live tool:
+https://modyfikatorcasper.github.io/modi-ps3-flash/
 
-## Access limitation
+## Features
 
-The access-code screen is a convenience gate, not authentication. All GitHub Pages assets and this repository are public. The code check can be inspected, the six-digit code can be recovered, and the writer can be reached directly without logging in. No sensitive data should be stored here. The noindex tag asks search engines not to index the login screen; it does not restrict access.
+- NOR flash dump to USB
+- NAND flash dump support
+- USB device selection `/dev_usb000/` – `/dev_usb007/`
+- Flash preparation / patch workflow for supported PS3 4.93 setups
+- Lightweight PS3-browser-compatible interface
+- Static hosting with no external runtime dependencies
 
-## Deployment and validation
+## Service use
 
-Publish branch `main`, folder `/ (root)`, from Settings > Pages. The `.nojekyll` file keeps these static assets unprocessed.
+Always create and verify a flash backup before any write or patch operation. Test the tool on a service/test console before relying on it in production.
 
-Verify successful and rejected login attempts, then test loading and operation separately on a compatible PS3. Desktop checks do not establish PS3 compatibility or validate writing console flash. Do not redesign the original writer before the initial console test.
+## Credits & notices
+
+Required original credits and notices for bundled low-level components remain preserved inside the tool files. PS3 Future Flash branding, packaging and service workflow are maintained separately from those components.
